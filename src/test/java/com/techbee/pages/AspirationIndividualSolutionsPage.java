@@ -24,8 +24,6 @@ public class AspirationIndividualSolutionsPage {
         return aspitation.isDisplayed() && aspitationPlus.isDisplayed();
     }
 
-    
-
     public String getYearlyCostAspirationPlus () {
         String priceYearly = driver.findElement(By.cssSelector("[data-testid='spend-and-save-yearly-price']")).getText().split(" ")[0].replace("/mo", "").replace("$", "");
         return priceYearly;
